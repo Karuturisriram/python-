@@ -1,0 +1,59 @@
+magic numbers
+num=int(input("enter number:"))
+while num>9:
+    sum=0
+    while num>0:
+        d=num%10
+        sum+=d
+        num//=10
+    num=sum
+if num==1:
+    print("magic")
+else:
+    print("not magic")
+
+composite number
+a=int(input("enter number:"))
+count=0
+for i in range(1,a+1,1):
+    if a%i==0:
+        print(i,end=" ")
+        count+=1
+if count>2:
+    print("composite number")
+else:
+    print("not composite")
+
+perfect number
+a=int(input("enter number:"))
+sum=0
+for i in range(1,a):
+    sum+=i
+if sum==a:
+    print("perfect number")
+else:
+    print("not perfect")
+
+niven number
+num=int(input(enter number:))
+sum=0
+while num>0:
+  d=num%10
+  sum+d
+  num//=10:
+if num%sum==0
+strong number
+a=int(input("enter number:"))
+a1=a
+fact=1
+sum=0
+while a>0:
+  d=num%10
+  for i in range(1,d+1):
+      fact*=i
+  sum=sum+fact
+  a=a//10
+if a1==sum:
+   print("strong number")
+else:
+   print("not strong number")
