@@ -1,0 +1,131 @@
+COLLECTIONS
+merge and sort a list
+L1=[1,2,3,4,5]
+L2=[6,7,8,9,10]# L1=list(map(int,input("enter list elements:")))
+L3=L1+L2
+L3.sort()
+print(L3)
+dynamic
+L1=list(map(int,input("enter list elements:")))
+L2=list(map(int,input("enter list elements:")))
+L3=L1+L2
+L3.sort()
+print(L3)
+
+swaping
+L=list(map(int,input("enter list elements:")))
+L[0],L[-1]=L[-1],L[0]
+print(L)
+
+
+L2=list(map(int,input("enter list elements:")))
+L3=L1+L2
+L3.sort()
+print(L3)
+duplicates
+L=list(map(int,input("enter list elements))
+L1=[]
+for i in L:
+    if i not in L1:
+        L1.append(i)
+print(L1)
+
+  odd number 
+list=[1,3,5,2,4,3,1,5,2]
+list1=[]
+for i in list:
+    if list.count(i)%2!=0 and i not in list1:
+        list1.append(i)
+print(list1)
+
+ print any 3 numbers   
+list=[8,9,1,2,3,4,5,0]
+list.sort()
+print(sum(list[:3]))
+
+print even no in desc to ascend and then odd no in acen to desn
+list=[8,5,6,9,10,5,3,11,2,1,3,5,5,9,11]
+even=[]
+odd=[]
+for i in list:
+    if i%2==0:
+        even.append(i)
+else:
+        odd.append(i)
+even.sort(reverse=True)
+odd.sort()
+rev=even+odd
+print(rev)
+
+l=[8,5,6,9,10,5,3,11,2,1,3,5,5,9,11]
+l.sort()
+l1=[]
+for i in l:
+    if i%2==0:
+        l1.insert(0,i)
+    else:
+        l1.append(i)
+print(l1)
+
+missing numbers
+s=sum(nums)
+n=len(nums)
+n=n*(n+1)/2
+return n-s
+
+Lemonade Change
+coins=[5,5,5,10,20]
+count5=[]
+count10=[]
+count20=[]
+for i in coins:
+     if i==5:
+          count5.append(i)
+     elif i==10:
+          count10.append(i)
+          if len(count5)>0:
+                count5.pop()
+          else:
+          
+palimdrome
+class Solution:
+    def isPalindrome(self, x: int) -> bool:
+        if(x<0):
+            return False
+        rev=0
+        original=x
+        while(x):
+            rev=rev*10+x%10
+            x//=10
+        if(original==rev):
+            return True
+        else:
+            return False
+
+t=[1,2,3,4,5,4,4]
+print(t.count(4))
+
+res={s for s in [1,2,3]if s%2}
+print(res)
+d={1:'hi','a':123,100:32.4}
+d.popitem('a')
+print(d)
+
+dictionaries
+student_marks={
+    "ram":90,
+    "shyam":80,
+    "hari":70,
+    "ganesh":70,  
+}
+dict={}
+for i in student_marks:
+    if student_marks[i]>=80:
+        dict[i]="A+"
+    elif student_marks[i]>=70:
+        dict[i]="B+"
+    elif student_marks[i]>=40:
+        dict[i]="C+"
+    else:
+        dict[i]="D+"
+print(dict)
