@@ -1,0 +1,23 @@
+reduce the number to 1
+def fun(n):
+    if n==1:
+        return 0
+    elif n%2==0:
+        return 1+fun(n//2)
+    else:
+        return 1+min(fun(n-1),fun(n+1))
+n=int(input("enter the num:"))
+print(fun(n))
+
+stack
+s="ab*c**def"
+l=[]
+for i in s:
+    if i=="*":
+        l.pop()
+    else:
+        l.append(i)
+print(l)
+make the string great
+a=input()
+s=[]
