@@ -1,0 +1,360 @@
+#BUBBLE SORT
+# def bubble_sort(arr):
+#     a=len(arr)
+#     for i in range(a):
+#         for j in range(0,a-i-1):
+#             if arr[j]>arr[j+1]:
+#                 arr[j],arr[j+1]=arr[j+1],arr[j]
+#     return arr
+# nums=[2,5,4,8,9,0]
+# print(bubble_sort(nums))
+#selectionsort
+# def selection_sort(arr):
+#     n=len(arr)
+#     for i in range(n-1):
+#         min_index=i
+#         for j in range(i+1,n):
+#           if arr[j]<arr[min_index]:
+#             min_index=j
+#         arr[i], arr[min_index] = arr[min_index], arr[i]
+#     return arr
+# nums=[4,1,2,5,6,3]
+# print(selection_sort(nums))
+#insertion sort
+# arr=[3,5,8,6,2]
+# for i in range(len(arr)):
+#     key=arr[i]
+#     j=i-1
+#     while j>=0 and arr[j]>key:
+#         arr[j+1]=arr[j]
+#         j-=1
+#     arr[j+1]=key
+# print(arr)
+#QUICKSORT
+# def quick_sort(arr):
+#     if len(arr)<=1:
+#         return arr
+#     pivot=arr[0]
+#     left=[x for x in arr[1:]if x <=pivot]
+#     right=[x for x in arr[1:]if x> pivot]
+#     return quick_sort(left)+[pivot]+quick_sort(right)
+# arr=[5,3,8,4,2,7,1,10]
+# print(quick_sort(arr))
+#mergesort
+# def merge_sort(arr):
+#     if len(arr)<=1:
+#         return arr
+#     mid=len(arr)
+#     left=merge_sort(arr[:mid])
+#     right=merge_sort(arr[mid:])
+#     return merge(left,right)
+# def merge(left,right):
+#     result=[]
+#     i=j=0
+#     while i<len(left)and j<len(right):
+#         if left[i]<right[j]:
+#             result.append(left[i])
+#             i+=1
+#         else:
+#             result.append(right[j])
+#             j+=1
+#     result.extend(left[i:])
+#     result.extend(right[j:])
+#     return result
+# arr=[5,2,9,1,6,3]
+# print(merge_sort(arr))
+# linkedlist
+# class node:
+#     def __init__(self,data):
+#         self.data=data
+#         self.next=None
+# class SLL:
+#     def __init__(self):
+#         self.head=none
+# m1=node(5)
+# sll=SLL()
+# sll.head=n1
+# n2=Node(10)
+# n1.next=n2
+# n3=Node(15)
+# n2.next=n3
+
+# class SLL:
+#     def Insert_at_end(self,data):
+#         print()
+#         new1=Node(data)
+#         if self.head is None:
+#             self.head=new1
+#         else:
+#             temp=self.head
+#             while temp.next!=None:
+#                 temp=temp.next
+# class Node:
+#     def __init__(self, data):
+#         self.data = data
+#         self.next = None
+# 
+
+# class Node:
+#     def __init__(self, data):
+#         self.data = data
+#         self.next = None
+
+# class SLL:
+#     def __init__(self):
+#         self.head = None
+
+#     def insert_at_begin(self, data):
+#         new = Node(data)
+#         new.next = self.head  
+#         self.head = new        
+
+#     def insert_at_end(self, data):
+#         new = Node(data)
+#         if self.head is None:
+#             self.head = new
+#         else:
+#             temp = self.head
+#             while temp.next is not None:
+#                 temp = temp.next
+#             temp.next = new
+
+#     def insert_at_specific(self, data, pos):
+#         if pos == 1:  # inserting at head
+#             self.insert_at_begin(data)
+#             return
+#         new = Node(data)
+#         temp = self.head
+#         for i in range(1, pos - 1):  # move to (pos-1)th node
+#             if temp is None:
+#                 print("Position out of range")
+#                 return
+#             temp = temp.next
+#         new.next = temp.next
+#         temp.next = new
+        
+        
+        
+#     def deletion_at_begining(self):
+#         temp=self.head
+#         self.head=temp.next
+#         temp.next=None
+        
+#     def deletion_at_end(self):
+#         prev=self.head
+#         temp=self.head.next
+#         while temp.next!=None:
+#             temp=temp.next
+#             prev=prev.next
+#         prev.next=None
+        
+#     def deletion_at_particular(self,pos):
+#         prev=self.head
+#         temp=self.head.next
+#         for i in range(1,pos-1):
+#             temp=temp.next
+#             prev=prev.next
+#         prev.next=temp.next
+#         temp.next=None
+        
+            
+
+#     def traversal(self):
+#         if self.head is None:
+#             print("Linked list is empty")
+#         else:
+#             temp = self.head
+#             while temp is not None:
+#                 print(temp.data, end=" -> ")
+#                 temp = temp.next
+#             print("None")
+            
+#     def sum_of_nodes(self):
+#         total = 0
+#         temp = self.head
+#         while temp is not None:
+#             total += temp.data
+#             temp = temp.next
+#         return total
+
+#     def even_of_nodes(self):
+#         even=0
+#         temp=self.head
+#         while temp is not None:
+#             if temp.data%2==0:
+#                 even+=temp.data
+#             temp=temp.next
+#         return even
+    
+#     def even_nodes(self):
+#         even_nodes=0
+#         for i in range(1,pos-1):
+            
+
+
+
+# sll = SLL()
+
+# sll.insert_at_begin(5)
+# sll.traversal()
+
+# sll.insert_at_begin(2)
+# sll.traversal()
+
+# sll.insert_at_end(20)
+# sll.traversal()
+
+# sll.insert_at_specific(8, 3)
+# sll.traversal()
+
+
+# print(sll.sum_of_nodes())
+# print(sll.even_of_nodes())
+# class SLL:
+#     def sum_even(self):
+#         s=0
+#         while(t!=None):
+#             if(t.data%2==0):
+#                 s=s+t.data
+#                 t=t.next
+#         print(s)
+#     def sum_even_nodes(self):
+#         t=self.head
+#         s=0
+#         pos=1
+#         while(t!=None):
+#             if(pos%2==0):
+#                 s=s+t.data
+#             t=t.next
+#         print(s)
+# #
+
+#     def sum_all(self):
+#         s=0
+#         temp=self.head
+#         while temp!=None:
+#             s=s+temp.data
+#             temp=temp.next
+#         print(s)
+# def count_all(self):
+#     c=0
+#     temp=self.head
+#     while temp!=None
+#          c=c+1
+'''24/09/2025'''
+# # 
+# class node:
+#     def __init__(self, root):
+#         self.data = root
+#         self.left = None
+#         self.right = None
+
+
+# root = node(10)
+# root.left = node(5)
+# root.right = node(20)
+# root.left.left = node(2)
+# root.left.right = node(8)
+
+# root.right.left = node(15)
+# root.right.right = node(25)
+# root.left.left.left = node(1)
+
+
+# def level_of_the_node(root):
+#     if root is None:
+#         return []
+#     s = []
+#     q = [root]  
+#     while len(q) > 0:
+#         ele = q.pop(0)   
+#         s.append(ele.data)
+#         if ele.left is not None:
+#             q.append(ele.left)
+#         if ele.right is not None:
+#             q.append(ele.right)
+#     return s
+# print( level_of_the_node(root))
+#sum of nodes
+# def sum_of_nodes(root):
+#     if root is None:
+#         return 0
+#     return root.data+sum_of_nodes(root.left)+sum_of_nodes(root.right)
+# print(sum_of_nodes(root))
+
+# def sum_of_even_nodes(root):
+#     if root is None:
+#         return 0
+#     current=root.data if root.data%2==0 else 0
+#     return current+sum_of_even_nodes(root.left)+sum_of_even_nodes(root.right)
+# print(sum_of_even_nodes(root))
+#height of tree
+# def height_of_tree(root):
+#     if root==None:
+#         return -1
+#     else:
+#         return 1+max(height_of_tree(root.left),height_of_tree(root.right))
+# print(height_of_tree(root))
+# def topview(root):
+#     print()
+#     q=[]
+#     d=dict()
+#     root.level=0
+#     q.append(root)
+#     while len(q)!=0:
+#         root=q.pop(0)
+#         if root.level not in d:
+#             d[root.level]=root.data
+#         if root.left is not None:
+#             q.append(root.left)
+#             root.left.level=root.level-1
+#         if root.right is not None:
+#             q.append(root.right)
+#             root.right=root.level+1
+#     for  i in sorted(d):
+#         print(d[i],end=" ")
+
+# print(topview(root))
+'''25/09/2025'''
+# y=578378923
+# s=str(y)
+# l=[]
+# for i in s:
+#     if i not in l:
+#         l.append(i)
+# a=len(s)
+# b=len(l)
+# c=a-b
+# print(c)
+# data,digit=map(int,input().split(" "))
+# a=str(data)
+# b=str(digit)
+# c=0
+# for i in a:
+#     if i==b:
+#         c+=1
+# print(c)
+# n=2245564632
+# s=str(n)
+# d={}
+# m=3
+# for i in s:
+#     if i not in d:
+#         d[i]=1
+#     else:
+#         d[i]+=1
+# res=0
+# for i in d:
+#     if d[i]==m:
+#         res=i
+# print(res)
+
+# arr=[1,4,2,6,7,8,9,10,11]
+# l=[]
+# for i in arr:
+#     if i%2==0:
+#         l.append(i)
+# for i in arr:
+#     if i%2!=0:
+#         l.append(i)
+# print(l)\
