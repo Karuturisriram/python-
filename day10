@@ -1,0 +1,81 @@
+vals=[-10,-7,-3,4,2]
+vals.sort()
+prod1=vals[-1]*vals[-2]
+prod2=vals[0]*vals[1]
+if prod2>prod1:
+    print(vals[0]+vals[1])
+else:
+    print(vals[-1]+vals[-2])
+digital secure data transfer solution
+s1="abcdefghijklmnopqrstuvwxyz"
+s2="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+a="D"
+key=3
+if a.islower():
+    idx=s1.index(a)
+    idx=idx+key
+    b=idx%26
+    print(s1[b])
+else:
+    idx=s2.index(a)
+    idx=idx+key
+    b=idx%26
+    print(s2[b])
+range b/w the numbers in a given host
+a,b,c=6,30,50
+l=[29,38,12,48,39,55]
+for i in l:
+    if b<=i and c>=i:
+        print(i,end=" ")
+k shortest
+n,a=7,5
+l=[9 ,-3, 8, -6, -7, 18, 10]
+l.sort()
+print(l[a-1])
+print(l)
+Graphs
+d={"a":[b],
+   "b":[d,e],
+   "c":[a],
+   "d":[c,g],
+   "e":[f],
+   "f":[d],
+   "g":[]
+   }
+
+a={[0 1 0 0 0 0 0],
+   [0 0 0 1 0 1 0],
+   [1 0 0 0 0 0 0],
+   [0 0 1 0 0 0 1],
+   [0 0 0 0 0 1 0],
+   [0 0 0 1 0 0 0],
+   [0 0 0 0 0 0 0]
+   }
+
+from collections import defaultdict
+edges=[['A','B'],['B','D'],['A','C'],['C','E'],['E','F']]
+adj_list=defaultdict(list)
+for u,v in edges:
+    adj_list[u].append(v)
+    adj_list[v].append(v)
+print(adj_list)
+
+def BFS(graph,start):
+    visited=set()
+    q=[start]
+    while q:
+        n=q.pop(0)
+        if n not in visited:
+            print(n,end=" ")
+            visited.add(n)
+            q.extend(graph[n])
+graph={
+    'A':['B','C'],
+    'B':['A','D','E'],
+    'C':['A','F'],
+    'D':['B'],
+    'E':['B','F'],
+    'F':['C','E']
+}
+BFS(graph,'A')
+
